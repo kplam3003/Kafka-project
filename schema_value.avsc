@@ -1,0 +1,23 @@
+{
+    "type": "record",
+    "namespace": "com.comments",
+    "name": "CommentsStream",
+    "fields": [
+        {
+            "name": "type",
+            "type": "string"
+        },
+        {
+            "name": "comment_at",
+            "type": "string"
+        },
+        {
+            "name": "user_name",
+            "type": "string"
+        },
+        {
+            "name": "cmt",
+            "type": "string"
+        }
+    ]
+}

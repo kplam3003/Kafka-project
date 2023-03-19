@@ -1,0 +1,11 @@
+{
+    "type": "record",
+    "namespace": "com.keys",
+    "name": "NameSocial",
+    "fields": [
+        {
+            "name": "SocialMedia",
+            "type": "string"
+        }
+    ]
+}
