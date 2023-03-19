@@ -13,12 +13,8 @@
     <img width="80%" src="system.png">
 </p>
 
-## 1. Clone project from gitlab
-- git clone `https://gitlab.com/haiminh1206/muhammad/-/tree/main/`
-## 2. Change current workspace to the repository director
-- cd ./muhammad
 
-## 3. Create virtual env
+## 1. Create virtual env
 - Run in terminal of current path: 
 ```virtualenv .venv```
 - Enable virtual environment:
@@ -26,14 +22,14 @@
 - Install requirements: 
 ```pip install -r requirements.txt```
 
-## 4. Build kafka container
+## 2. Build kafka container
 - Run in terminal of current path: ```docker-compose up -d```
 
-## 5. Check container running
+## 3. Check container running
 - ```docker ps -a```
 (if any container does not run, try: ```docker-compose up -d``` again)
 
-## 6. Config Kafka Control Center
+## 4. Config Kafka Control Center
 
 - Step 1: Access to Kafka control center: 
 
@@ -44,8 +40,8 @@
   - Host: localhost
   - Port: 5434
   - Database: postgres
-  - User name: minh
-  - Password: minh
+  - User name: {username}
+  - Password: {password}
   - Right click to `public schemas` -> SQL editor -> Open SQL Script -> Run this SQL script: 
 
 ```sql
@@ -75,8 +71,8 @@ Login Account:
 In the bottom left panel -> Choose `Data sources` -> Click `Add data source` -> search postgres 
 - Host: timescaledb:5432
 - Database: postgres
-- User: minh
-- Password: minh
+- User: {username}
+- Password: {password}
 - TLS/SSL Mode: disable
 -> Click `Save & test` -> Click `Explore`
 in the upper left panel -> Choose `Dashboards` -> Click `new dashboards` -> Click `add a new panel` -> Switch `Builder` to `Code` toggle -> Input SQL query
